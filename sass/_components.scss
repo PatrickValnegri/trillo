@@ -248,6 +248,40 @@
     &__photo {
         width: 100%;
         display: block;
+        transition: filter .3s;
+    }
+
+    &__content {
+        text-align: center;
+        position: relative;
+    }
+
+    &__content:hover &__photo{
+        filter: brightness(10%);
+    }
+
+    &__content:hover &__caption {
+        color: #fff;
+        opacity: 1;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+
+    &__caption {
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%) scale(.1);
+
+        opacity: 0;
+        backface-visibility: hidden;
+        
+        transition: all .5s;
     }
 }
 
