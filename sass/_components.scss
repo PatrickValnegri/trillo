@@ -102,6 +102,12 @@
         
     }
 
+    &__user {
+        display: flex;
+        align-items: center;
+
+    }
+
     &__notification {
         font-size: .8rem;
         height: 1.75rem;
@@ -165,7 +171,7 @@
         flex-direction: column;
         transform: scale(0);
         transform-origin: top;
-
+        
         a:hover {
             background-color: var(--color-grey-light-2);
         }
@@ -584,8 +590,6 @@
     &__user {
         display: flex;
         align-items: center;
-
-        
     }
 
     &__photo {
